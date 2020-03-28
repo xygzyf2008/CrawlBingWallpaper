@@ -19,6 +19,6 @@ if __name__ == '__main__':
     fileName = datetime.datetime.now().strftime('%Y-%m-%d') + '.jpg'
     if not os.path.exists(folder):
         os.makedirs(folder)
-    print(tag, '-----', fileName)
+    print(tag, '----------', fileName)
     local_filename = urllib.request.urlretrieve(tag, folder + fileName)
     print(local_filename)
