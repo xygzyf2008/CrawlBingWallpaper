@@ -21,4 +21,4 @@ if __name__ == '__main__':
         os.makedirs(folder)
     print(tag, '----------', fileName)
     local_filename = urllib.request.urlretrieve(tag, folder + fileName)
-    print(local_filename)
+    print('爬取保存成功！', local_filename)
