@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import urllib.request
 import datetime
 import os
+import time
 
 url = 'https://www.bing.com/'
 folder = 'D:/1/bing theme/%s/' % datetime.datetime.now().year
@@ -22,3 +23,4 @@ if __name__ == '__main__':
     print(tag, '----------', fileName)
     local_filename = urllib.request.urlretrieve(tag, folder + fileName)
     print('爬取保存成功！', local_filename)
+    time.sleep(3)
